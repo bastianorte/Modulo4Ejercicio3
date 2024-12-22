@@ -1,19 +1,18 @@
-# Evaluacion Modulo 4 Ejercicio 2   
+# Evaluacion Modulo 4 Ejercicio 3 
 
 ## 📖 Descripción
-En este ejercicio práctico, los estudiantes profundizarán en el manejo del DOM virtual, el uso
-de referencias para manipular elementos del DOM, y la integración de componentes
-avanzados en ReactJS. Implementarán funcionalidades avanzadas en el sistema del hospital,
-como la gestión del DOM en el cliente y servidor, la optimización de rendimiento, y el uso de
-fragmentos y componentes de orden superior para mejorar la modularidad y eficiencia del
-sistema.
+En este ejercicio práctico, los estudiantes aplicarán todo lo aprendido sobre ReactJS para crear
+un sistema completo para el hospital. Implementarán componentes reutilizables, optimizarán
+el rendimiento, y manejarán interacciones complejas con datos a través de APIs. Todas las
+vistas del sistema del hospital (Home, Servicios, Equipo Médico, Citas) deberán integrar
+componentes avanzados y técnicas de optimización de ReactJS.
 
 ![Inicio](public/assets/vista.png)
 
 ## 📁 Proyecto
 
 ```plaintext
-/Modulo4Ejercicio2
+/Modulo4Ejercicio3
 │
 ├── public
 │   ├── assets
@@ -58,13 +57,13 @@ sistema.
 Clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/bastianorte/Modulo4Ejercicio2.git
+git clone https://github.com/bastianorte/Modulo4Ejercicio3.git
 ```
 
 Navega hasta el directorio del proyecto:
 
 ```bash
-cd Modulo4Ejercicio2
+cd Modulo4Ejercicio3
 ```
 
 Instala las dependencias:
