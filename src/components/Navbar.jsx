@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom'
 import { GiHamburgerMenu, GiWhiteBook } from "react-icons/gi";
 
 const navigation = [
-  { name: 'Inicio', to: '/', current: true  },
-  { name: 'Equipo', to: '/Equipo', current: false },
-  { name: 'Contacto', to: '/Contacto', current: false },   
+  { name: 'Inicio', to: '/' },
+  { name: 'Equipo', to: '/Equipo'},
+  { name: 'Agendar Cita', to: '/Cita' },   
 ]
 
 function classNames(...classes) {

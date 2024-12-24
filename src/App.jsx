@@ -1,10 +1,10 @@
 
 
-import NavBar from './components/navbar';
+import NavBar from './components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Inicio from './pages/Inicio';
 import Equipo from './pages/Equipo';
-import Contacto from './pages/Contacto';
+import Cita from './pages/Cita';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -15,7 +15,7 @@ return (
       <Routes>
         <Route path='/' element={<Inicio/>}></Route>
         <Route path='/Equipo' element={<Equipo/>}></Route>   
-        <Route path='/Contacto' element={<Contacto/>}></Route>             
+        <Route path='/Cita' element={<Cita/>}></Route>             
       </Routes>
   <Footer/> 
   </div>
