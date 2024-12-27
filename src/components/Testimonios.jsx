@@ -14,7 +14,7 @@ const Testimonios = ({data}) => {
         <div key={id} className="w-full max-w-sm border border-gray-200 rounded-lg shadow bg-light">
         <div className="flex flex-col items-center p-6">
             <img className="w-24 h-24 mb-3 rounded-full sepia" src={photo}  alt="Bonnie image"/>
-            <h5 className="mb-1 text-xl font-medium text-primary">{name}</h5>
+            <h5 className="mb-1 text-xl font-medium text-primary">{name.length > 25 ? 'Juan Perez' : name}</h5>
             <span className="text-sm text-primary text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam soluta culpa commodi assumenda quae rem perspiciatis cum ipsam dolores, nesciunt deserunt quo. Quae rerum optio eaque distinctio voluptatum ab!</span>
             <div className="flex mt-4 md:mt-6">
 
