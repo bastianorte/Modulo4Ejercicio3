@@ -1,11 +1,29 @@
 import PropTypes from 'prop-types';
-import withMoreInfo from './withMoreInfo';
-import BotonPrueba from './BotonPrueba';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import WithMoreInfo from './withMoreInfo';
 
-const DoctorCardWithInfo = withMoreInfo(BotonPrueba);
 
 const DoctorCard = ({doctores}) => {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedDoctor, setSelectedDoctor] = useState(null);
+
+  const openModal = (doctor) => {
+    setSelectedDoctor(doctor);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedDoctor(null);
+  };
+
+
+  useEffect(() => {
+    if (doctores.length > 0) {
+      console.log('Datos de doctores recibidos:', doctores);
+    }
+  }, [doctores]);  
 
   const [specialtyFilter, setSpecialtyFilter] = useState('');
 
@@ -42,9 +60,17 @@ const DoctorCard = ({doctores}) => {
                 <span className="text-sm text-primary">{doctor.especialidad}</span>
                 <span className="text-sm text-primary">{doctor.experiencia} años de experiencia</span>
                 <div className="flex mt-4 md:mt-6">
-                <DoctorCardWithInfo
-            doctor={doctor}
-          />
+                <button 
+              className="px-4 py-2 bg-primary text-white text-md rounded hover:bg-third"
+              onClick={() => openModal(doctor)}
+            >
+              Más Información
+            </button>
+
+
+                </div>                
+                <div className="flex mt-4 md:mt-6">
+                <WithMoreInfo isOpen={isOpen} onClose={closeModal} doctor={selectedDoctor} />
                 </div>
             </div>
         </div>

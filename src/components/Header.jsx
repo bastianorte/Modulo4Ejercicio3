@@ -1,12 +1,11 @@
 
 
-const Header = ({ title, text, className }) => {
-    return (
-      <header className={className}>
-        <h2>{title}</h2>
-        <p>{text}</p>
-      </header>
-    );
-  };
+const Header = ({ children }) => {
+  return (
+<div className="header-style">
+{children}
+</div>
+  );
+};
 
-  export default Header;
+export default Header;
