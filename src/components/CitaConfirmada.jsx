@@ -1,6 +1,7 @@
 
 import { useLocation } from 'react-router-dom';
 import { Card, Typography } from "@material-tailwind/react";
+import React from 'react';
 
 const TABLE_HEAD = ["Paciente", "Doctor", "Fecha", "Hora", ""];
 
@@ -11,7 +12,7 @@ console.log(pacientes)
 
 {pacientes.length > 0 ? (
 
-<div> 
+<> 
 <h2 className="text-balance text-2xl font-semibold tracking-tight text-primary sm:text-4xl text-center">Citas Agendada</h2>
     <Card className="h-full w-96 overflow-scroll mx-auto mb-10 mt-6">
       <table className="w-full min-w-max table-auto text-left">
@@ -58,7 +59,7 @@ console.log(pacientes)
         </tbody>
       </table>
     </Card>
-</div>
+</>
 ): (
   <h2 className="text-balance font-semibold tracking-tight text-primary sm:text-4xl text-center mb-6">No hay citas agendadas</h2>
 )}
