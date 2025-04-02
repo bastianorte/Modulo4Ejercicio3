@@ -2,7 +2,7 @@
 
 
 import NavBar from './components/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Inicio from './pages/Inicio';
 import Equipo from './pages/Equipo';
 import Contacto from './pages/Contacto';
